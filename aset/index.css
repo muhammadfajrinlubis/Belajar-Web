@@ -6,12 +6,12 @@
 }
 
 body {
-	background-color: lightgrey;
+	background-color: beige;
 }
 
 header {
-	background-color: crimson;
-	color: white;
+	background-color: darkred;
+	color: whitesmoke;
 	padding: 20px;
 }
 
@@ -23,7 +23,7 @@ header h2 {
 .div-utama {
 	max-width:1080px;
 	margin: 20px auto;
-	background-color: white;
+	background-color: beige;
 	padding: 15px;
 	overflow: hidden;
 }
@@ -33,7 +33,7 @@ header h2 {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: darkorange;
+	background-color: sandybrown;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -43,7 +43,7 @@ header h2 {
 }
 
 .navigasi li a {
-	color: white;
+	color: whitesmoke;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 20px;
@@ -51,8 +51,7 @@ header h2 {
 }
 
 .navigasi li a:hover{
-	background-color: crimson;
-	transition-duration: 2s;
+	transform: translatey(-10px);
 }
 
 .banner {
@@ -60,24 +59,133 @@ header h2 {
 }
 
 .banner img {
-	display: block;
-	height: 600px;
+	width:100%
+	
+}
+
+.menu-kiri {
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah {
+	width: 530px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah img {
 	width: 100%;
+}
+
+.menu-kanan {
+	width: 250px;
+	float:left;
+}
+
+.kotak {
+	border: 1px solid darkorange;
+	padding: 10px;
+	margin-bottom:15px;
+}
+
+.kotak h3 {
+	background-color: darkred;
+	color: whitesmoke;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 15px;	
+}
+
+.posting p{
+	align: justify;
+}
+
+.tombol {
+	text-decoration: none;
+	padding: 10px;
+	width: 120px;
+	background-color: darkorange;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+	color: white;
+	border-radius: 15px;
+}
+
+.tombol-pesan{
+	background-color: sandybrown;
+}
+
+.tombol-lengkap{
+	background-color: burlywood;
+}
+
+.tombol:hover{
+	background-color:darkred;
+	transition-duration:2s;
+	transform: translateY(-10px);
+}	
+
+.berita ul{
+	list-style-type: none;
+}
+
+.berita ul li a{
+	text-decoration: none;
+	display:block;
+	padding:12px;
+	color:black;
+	border-bottom: 1px solid gray;
+	margin-bottom:10px;
+}
+
+.jadwal{
+	width: 250px;
+	float:left;
+}
+
+.gambar{
+	width: 100%;
+}
+
+.jadwal p{
+	text-align:center;
+}
+
+.jadwal img{
+	width: 100%;
+}
+
+.posting{
+	margin-bottom: 12px;
+	text-align: right;
+	color: grey;
+	font-size: 10px;
 }
 
 footer {
 	clear: both;
-	background-color: crimson;
+	background-color: darkred;
 	color: white;
 	padding: 10px;
 	text-align:center;
 }
 
+/* Tampilan Untuk Layar Handphone */
 @media screen and (max-width: 780px){
 	header h2, header p{
 		text-align: center;
 	}
 	.navigasi li{
-		float: none;
+		float: none;
+	}
+	.menu-kiri, .menu-tengah, .menu-kanan, .jadwal{
+		float:none;
+		width:100%;
+		
 	}
 }
+
